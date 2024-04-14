@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen({super.key}); //key forward it to super class
+  const StartScreen(this.startQuiz,
+      {super.key}); //key forward it to super class
+
+  final void Function() startQuiz; // It'll forward the current val to this.sQ
+
   @override
   Widget build(context) {
     return Center(
@@ -17,7 +21,7 @@ class StartScreen extends StatelessWidget {
           ),
           const SizedBox(height: 30),
           OutlinedButton.icon(
-            onPressed: () {},
+            onPressed: startQuiz,
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
             ),
