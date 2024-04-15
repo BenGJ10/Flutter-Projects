@@ -2,12 +2,12 @@ import 'package:quiz_app/models/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
-    'What is Flutter?',
+    'What are the main building blocks of Flutter UIs?',
     [
-      'Flutter is an open-source UI toolkit',
-      'Flutter is an open-source backend development framework',
-      'Flutter is an open-source programming language for cross-platform applications',
-      'Flutter is a DBMS toolkit'
+      'Widgets',
+      'Components',
+      'Blocks',
+      'Functions',
     ],
   ),
   QuizQuestion('How are Flutter UIs built?', [
